@@ -1,9 +1,11 @@
 html {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
-    background-color: #407BFF;
+    color: #407BFF;
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .main {
@@ -11,9 +13,48 @@ html {
     flex-direction: column;
     align-items: center;
 
-    .exercice1{
+    .exercice1 {
+        max-width: 1000px;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        #tab1 {
+            font-weight: normal;
+        }
+
+        div {
+            overflow: auto;
+            max-height: 200px;
+        }
     }
+    .exercice2 {
+        margin-top: 30px;;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        textarea {
+            resize: none;
+        }
+
+        p {
+            font-size: 2em;
+            color: #407BFF;
+        }
+    }
+}
+
+table, th {
+    border: solid 2px #407BFF;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input {
+    border: 0;
 }

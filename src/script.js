@@ -39,16 +39,12 @@ document.getElementById('answer').innerHTML = answer;
 
 //************************************* */
 
-var tabutton = document.getElementById('button2');
-tabutton.addEventListener('click', addTable);
-
-function addTable() {
-    let tab = document.getElementById('tab2');
-    tab.insertAdjacentHTML('afterbegin', '<tr><th scope="col">word</th><th scope="col">start</th><th scope="col">stop</th></tr>');
-    for (i = 0; i < data.length; i++) {
-        tab.insertAdjacentHTML("beforeend", '<tr><th>' + data[i].Mot + '</th><th>' + data[i].start + '</th><th>' + data[i].end + '</th></tr>');
-    }
+let tab = document.getElementById('tab2');
+tab.insertAdjacentHTML('afterbegin', '<th class="header" scope="col">word</th><th class="header" scope="col">start</th><th class="header" scope="col">stop</th></tr>');
+for (i = 0; i < data.length; i++) {
+    tab.insertAdjacentHTML("beforeend", '<tr><th>' + data[i].Mot + '</th><th>' + data[i].start + '</th><th>' + data[i].end + '</th></tr>');
 }
+
 
 //Exercice 2
 

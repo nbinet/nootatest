@@ -4,40 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.scss" />
     <script defer src="script.js"></script>
     <script defer src="transcript.json"></script>
+    <link rel="stylesheet" href="styles.scss" />
 </head>
 <body>
     <header class="header"><h1 class="title">Test pour Noota</h1></header>
     <main class="main">
         <article class="exercice1">
             <table id="tab1">
+                <caption><button id="button1">Search word</button></caption>
                 <tr>
-                    <th scope="col">timestamp</th>
-                    <th scope="col">Mot</th>
+                    <th class="header" scope="col">timestamp</th>
+                    <th class="header" scope="col">Mot</th>
                 </tr>
                 <tr>
-                    <th><input type="text" id="time0" value="5.99" size="6" maxlength="6" required></th>
-                    <th id="word0"></th>
+                    <th><input type="text" id="time0" value="5.99" maxlength="6"></th>
+                    <th id="word0">result</th>
                 </tr>
                 <tr>
-                    <th><input type="text" id="time1" value="12.7" size="6" maxlength="6" required></th>
-                    <th id="word1"></th>
+                    <th><input type="text" id="time1" value="12.7" maxlength="6"></th>
+                    <th id="word1">result</th>
                 </tr>
                 <tr>
-                    <th><input type="text" id="time2" value="37.5" size="6" maxlength="6" required></th>
-                    <th id="word2"></th>
+                    <th><input type="text" id="time2" value="37.5" maxlength="6"></th>
+                    <th id="word2">result</th>
                 </tr>
             </table>
-            <button id="button1">Search word</button>
             <p id="answer">o</p>
-            <button id="button2">Afficher / Effacer le tableau</button>
-            <table id="tab2"></table>
+            <div><table id="tab2"></table></div>
         </article>
         <article class="exercice2">
-            <label for="textzone">Write here :</label>
-            <textarea id="textzone" name="textzone" rows="5"></textarea>
+            <textarea id="textzone" placeholder="Vous pouvez écrire ici :)" rows="5"></textarea>
             <p id="counter">0</p>
         </article>
     </main>
